@@ -13,7 +13,7 @@ export const Button:FC<ButtonProps> = (props) => {
   return (
     <button
       className={clsx(
-        'rounded-[12px] w-[220px] h-[40px] text-p4 text-white font-medium focus:border-2 focus:border-background-black focus:ring-[2px]',
+        'rounded-[12px] w-[220px] h-[40px] text-p4 text-white font-medium focus:ring-[2px] focus:ring-offset-2 focus:ring-offset-background-black',
         ButtonPreset[preset],
         disabled ? 'opacity-20 disabled:pointer-events-none':'',
         className
@@ -29,8 +29,17 @@ export const Button:FC<ButtonProps> = (props) => {
 
 const ButtonPreset = {
   primary: 'bg-primary-100 hover:bg-primary-80 focus:ring-primary-100 focus:bg-primary-100',
-  secondary: 'bg-secondary-100 hover:bg-secondary-80 focus:ring-primary-100 focus:bg-secondary-100',
-  success: 'bg-success-100 hover:bg-success-80 focus:ring-primary-100 focus:bg-success-100',
-  warning: 'bg-warning-100 hover:bg-warning-80 focus:ring-primary-100 focus:bg-warning-100',
-  error: 'bg-error-100 hover:bg-error-80 focus:ring-primary-100 focus:bg-error-100',
+  secondary: 'bg-secondary-100 hover:bg-secondary-80 focus:ring-secondary-100 focus:bg-secondary-100',
+  success: 'bg-success-100 hover:bg-success-80 focus:ring-success-100 focus:bg-success-100',
+  warning: 'bg-warning-100 hover:bg-warning-80 focus:ring-warning-100 focus:bg-warning-100',
+  error: 'bg-error-100 hover:bg-error-80 focus:ring-error-100 focus:bg-error-100',
 }
+
+//'rounded-[12px] w-[220px] h-[40px] text-p4 text-white font-medium focus:border-2 focus:border-background-black focus:ring-[2px]'
+// const ButtonPreset = {
+//   primary: 'bg-primary-100 hover:bg-primary-80 focus:ring-primary-100 focus:bg-primary-100',
+//   secondary: 'bg-secondary-100 hover:bg-secondary-80 focus:ring-primary-100 focus:bg-secondary-100',
+//   success: 'bg-success-100 hover:bg-success-80 focus:ring-primary-100 focus:bg-success-100',
+//   warning: 'bg-warning-100 hover:bg-warning-80 focus:ring-primary-100 focus:bg-warning-100',
+//   error: 'bg-error-100 hover:bg-error-80 focus:ring-primary-100 focus:bg-error-100',
+// }
