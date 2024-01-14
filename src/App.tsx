@@ -1,5 +1,5 @@
 import { Text, Color, Header, Footer} from './components/base/'
-import { Typography, ButtonSection, BadgeSection, CheckboxSection } from './components/sections'
+import { Typography, ButtonSection, BadgeSection, CheckboxSection, NotificationSection } from './components/sections'
 import { FC, ReactNode } from "react";
 
 function App() {
@@ -21,6 +21,9 @@ function App() {
         </Section>
         <Section name='Checkbox'>
           <CheckboxSection />
+        </Section>
+        <Section name='Notification'>
+          <NotificationSection />
         </Section>
       </div>
       <Footer />
