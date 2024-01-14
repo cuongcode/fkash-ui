@@ -1,5 +1,5 @@
 import { Text, Color} from './components/base/'
-import { Typography, ButtonSection } from './components/sections'
+import { Typography, ButtonSection, BadgeSection } from './components/sections'
 import { FC, ReactNode } from "react";
 
 function App() {
@@ -13,6 +13,9 @@ function App() {
       </Section>
       <Section name='Button'>
         <ButtonSection />
+      </Section>
+      <Section name='Badge'>
+        <BadgeSection />
       </Section>
     </div>
   );
