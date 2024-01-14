@@ -1,15 +1,18 @@
-import { Text, Color } from './components/base/'
-import { Typography } from './components/sections'
+import { Text, Color} from './components/base/'
+import { Typography, ButtonSection } from './components/sections'
 import { FC, ReactNode } from "react";
 
 function App() {
   return (
-    <div className='flex flex-col gap-20 p-10 font-inter'>
+    <div className='flex flex-col gap-20 p-10 font-inter bg-background-black text-white'>
       <Section name='Typography'>
         <Typography />
       </Section>
       <Section name='Color'>
         <Color />
+      </Section>
+      <Section name='Button'>
+        <ButtonSection />
       </Section>
     </div>
   );
@@ -24,9 +27,10 @@ interface SectionProps {
 const Section:FC<SectionProps> = (props) => {
   const {name, children} = props
   return (
-    <div className='flex flex-col gap-5 divide-y divide-gray-300'>
+    <div className='flex flex-col gap-5'>
       <Text text={name} preset='h4'/>
       {children}
   </div>
   );
 };
+

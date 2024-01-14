@@ -50,6 +50,6 @@ export const Color = () => {
 
   const ColorPalette = ({className}:{className:string}) => {
     return (
-      <div className={clsx('w-28 h-28 rounded-lg', className)} />
+      <div className={clsx('w-24 h-24 rounded-lg', className)} />
     );
   };
