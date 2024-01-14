@@ -19,7 +19,7 @@ export const BaseCheckbox:FC<CheckboxProps> = (props) => {
     <div className='relative flex gap-2 items-center'>
       <button
         className={clsx(
-          'rounded-[4px] h-[18px] w-[18px] flex items-center justify-center border-2 hover:border-primary-100 focus:ring-[2px] focus:ring-primary-100',
+          'rounded-[4px] h-[18px] w-[18px] flex items-center justify-center border-2 hover:border-primary-100 focus:ring-[1px] focus:ring-primary-100 focus:ring-offset-1 focus:ring-offset-background-black',
           isTick ? 'text-white border-primary-100 bg-primary-100 hover:bg-primary-80 hover:border-primary-80' : 'border-secondary-100',
           CheckboxPreset[preset],
           disabled ? 'opacity-20 disabled:pointer-events-none':'',
