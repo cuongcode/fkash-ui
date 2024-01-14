@@ -1,4 +1,4 @@
-import { Text, Color, Header} from './components/base/'
+import { Text, Color, Header, Footer} from './components/base/'
 import { Typography, ButtonSection, BadgeSection, CheckboxSection } from './components/sections'
 import { FC, ReactNode } from "react";
 
@@ -23,6 +23,7 @@ function App() {
           <CheckboxSection />
         </Section>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -42,4 +43,3 @@ const Section:FC<SectionProps> = (props) => {
   </div>
   );
 };
-
