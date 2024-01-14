@@ -5,12 +5,11 @@ import {Text} from './text'
 interface BadgeProps{
   text?: string;
   preset: keyof typeof BadgePreset;
-  children?: ReactNode;
   className?: string;
 }
 
 export const Badge:FC<BadgeProps> = (props) => {
-  const {text, preset, children, className, ...rest} = props
+  const {text, preset, className, ...rest} = props
 
   return (
     <div

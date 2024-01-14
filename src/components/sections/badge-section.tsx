@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Badge } from '../base'
+import { Badge } from '../base'
 
 export const BadgeSection = () => {
     return (
