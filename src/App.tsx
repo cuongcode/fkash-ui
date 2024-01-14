@@ -1,11 +1,12 @@
-import { Text, Color} from './components/base/'
+import { Text, Color, Header} from './components/base/'
 import { Typography, ButtonSection, BadgeSection, CheckboxSection } from './components/sections'
 import { FC, ReactNode } from "react";
 
 function App() {
   return (
-    <div className='p-10 font-inter bg-background-black text-white'>
-      <div className='flex flex-col gap-10 max-w-screen-md m-auto'>
+    <div className='flex flex-col gap-10 px-10 font-inter bg-background-black text-white'>
+      <Header />
+      <div className='flex flex-col gap-10 w-full max-w-screen-md m-auto'>
         <Section name='Typography'>
           <Typography />
         </Section>
