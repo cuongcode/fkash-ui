@@ -4,22 +4,24 @@ import { FC, ReactNode } from "react";
 
 function App() {
   return (
-    <div className='flex flex-col gap-20 p-10 font-inter bg-background-black text-white'>
-      <Section name='Typography'>
-        <Typography />
-      </Section>
-      <Section name='Color'>
-        <Color />
-      </Section>
-      <Section name='Button'>
-        <ButtonSection />
-      </Section>
-      <Section name='Badge'>
-        <BadgeSection />
-      </Section>
-      <Section name='Checkbox'>
-        <CheckboxSection />
-      </Section>
+    <div className='p-10 font-inter bg-background-black text-white'>
+      <div className='flex flex-col gap-10 max-w-screen-md m-auto'>
+        <Section name='Typography'>
+          <Typography />
+        </Section>
+        <Section name='Color'>
+          <Color />
+        </Section>
+        <Section name='Button'>
+          <ButtonSection />
+        </Section>
+        <Section name='Badge'>
+          <BadgeSection />
+        </Section>
+        <Section name='Checkbox'>
+          <CheckboxSection />
+        </Section>
+      </div>
     </div>
   );
 }
@@ -33,8 +35,8 @@ interface SectionProps {
 const Section:FC<SectionProps> = (props) => {
   const {name, children} = props
   return (
-    <div className='flex flex-col gap-5'>
-      <Text text={name} preset='h4'/>
+    <div className='flex flex-col gap-5 border border-primary-100 border-dashed rounded-2xl p-5'>
+      <Text text={name} preset='h5' className='border-b border-b-gray-600'/>
       {children}
   </div>
   );

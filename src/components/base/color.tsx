@@ -5,7 +5,7 @@ export const Color = () => {
     return (
       <div className='flex flex-col gap-5'>
         <div className='flex flex-col gap-2'>
-          <Text text='Primary Color' preset='h5'/>
+          <Text text='Primary Color' preset='p3'/>
           <div className='flex justify-between'>
             <ColorPalette className='bg-primary-100' />
             <ColorPalette className='bg-primary-80'/>
@@ -15,7 +15,7 @@ export const Color = () => {
           </div>
         </div>
         <div className='flex flex-col gap-2'>
-          <Text text='Base Color' preset='h5'/>
+          <Text text='Base Color' preset='p3'/>
           <div className='flex justify-between'>
             <ColorPalette className='bg-base-100' />
             <ColorPalette className='bg-base-80'/>
@@ -25,7 +25,7 @@ export const Color = () => {
           </div>
         </div>
         <div className='flex flex-col gap-2'>
-          <Text text='Succes Color' preset='h5'/>
+          <Text text='Succes Color' preset='p3'/>
           <div className='flex justify-between'>
             <ColorPalette className='bg-success-100' />
             <ColorPalette className='bg-success-80'/>
@@ -35,7 +35,7 @@ export const Color = () => {
           </div>
         </div>
         <div className='flex flex-col gap-2'>
-          <Text text='Succes Color' preset='h5'/>
+          <Text text='Succes Color' preset='p3'/>
           <div className='flex justify-between'>
             <ColorPalette className='bg-error-100' />
             <ColorPalette className='bg-error-80'/>

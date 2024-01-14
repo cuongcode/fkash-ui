@@ -16,12 +16,6 @@ export const CheckboxSection = () => {
                     <BaseCheckbox preset='base' label='Label' disabled/>
                 </div>
             </div>
-            <div className='flex flex-col gap-2'>
-                <div className='flex gap-5'>
-                    <BaseCheckbox preset='base' label='Label' desc='Desc'/>
-                    <BaseCheckbox preset='base' label='Label' desc='Desc' disabled/>
-                </div>
-            </div>
         </div>
     );
 };

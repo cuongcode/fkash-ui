@@ -2,7 +2,7 @@ import { Text } from '../base/'
 
 export const Typography = () => {
     return (
-      <div className='flex flex-col gap-10'>
+      <div className='flex gap-20'>
         <div>
           <Text text="Heading 1" preset="h1" />
           <Text text="Heading 2" preset="h2" />
