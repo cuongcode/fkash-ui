@@ -8,6 +8,7 @@ export const ButtonSection = () => {
                 <Text text='Primary' preset='p3'/>
                 <div className='flex gap-5'>
                     <Button preset='primary' text='Buy BTC'/>
+                    <Button preset='primary' text='Buy BTC' fetch/>
                     <Button preset='primary' text='Buy BTC' disabled/>
                 </div>
             </div>
@@ -15,6 +16,7 @@ export const ButtonSection = () => {
                 <Text text='Secondary' preset='p3'/>
                 <div className='flex gap-5'>
                     <Button preset='secondary' text='Buy BTC'/>
+                    <Button preset='secondary' text='Buy BTC' fetch/>
                     <Button preset='secondary' text='Buy BTC' disabled/>
                 </div>
             </div>
@@ -22,6 +24,7 @@ export const ButtonSection = () => {
                 <Text text='Success' preset='p3'/>
                 <div className='flex gap-5'>
                     <Button preset='success' text='Buy BTC'/>
+                    <Button preset='success' text='Buy BTC' fetch/>
                     <Button preset='success' text='Buy BTC' disabled/>
                 </div>
             </div>
@@ -29,6 +32,7 @@ export const ButtonSection = () => {
                 <Text text='Warning' preset='p3'/>
                 <div className='flex gap-5'>
                     <Button preset='warning' text='Buy BTC'/>
+                    <Button preset='warning' text='Buy BTC' fetch/>
                     <Button preset='warning' text='Buy BTC' disabled/>
                 </div>
             </div>
@@ -36,6 +40,7 @@ export const ButtonSection = () => {
                 <Text text='Error' preset='p3'/>
                 <div className='flex gap-5'>
                     <Button preset='error' text='Buy BTC'/>
+                    <Button preset='error' text='Buy BTC' fetch/>
                     <Button preset='error' text='Buy BTC' disabled/>
                 </div>
             </div>

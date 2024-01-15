@@ -1,27 +1,31 @@
 import clsx from 'clsx';
 import { FC } from "react";
+import { SimpleLoading } from './loading';
 
 interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text?: string;
   preset: keyof typeof ButtonPreset;
+  fetch?: boolean;
 }
 
 export const Button:FC<ButtonProps> = (props) => {
-  const {text, preset, children, className, onClick, disabled, ...rest} = props
+  const {text, preset, children, className, onClick, disabled, fetch, ...rest} = props
 
   return (
     <button
       className={clsx(
         ButtonPreset[preset],
         disabled ? 'opacity-20 disabled:pointer-events-none':'',
+        fetch ? 'flex items-center justify-center':'',
         className
       )}
       disabled={disabled}
       {...rest}
     >
-      {text}
-      {children}
+      {fetch ? <SimpleLoading /> : null }
+      {fetch ? null : text }
+      {fetch ? null : children }
     </button>
   );
 };
